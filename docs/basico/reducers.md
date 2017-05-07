@@ -41,7 +41,7 @@ Ahora que decidimos cómo se verá nuestro objeto de estado, estamos listos para
 (previousState, action) => newState
 ```
 
-Se llama reducer porque es el tipo de función que pasarías a [`Array.prototype.reduce(reducer, ?initialValue)`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/reduce). Es muy importante que los reducer se mantengan puros. Cosas que **nunca** deberías hacer dentron de un reducer:
+Se llama reducer porque es el tipo de función que pasarías a [`Array.prototype.reduce(reducer, ?initialValue)`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/reduce). Es muy importante que los reducer se mantengan puros. Cosas que **nunca** deberías hacer dentro de un reducer:
 
 * Modificar sus argumentos;
 * Realizar tareas con efectos secundarios como llamas a un API o transiciones de rutas.
