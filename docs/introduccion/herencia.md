@@ -61,6 +61,6 @@ function toObservable(store) {
 
 De forma similar, puedes componer diferentes streams asíncronos para convertirlos en acciones antes de enviarlos al `store.dispatch()`.
 
-La pregunta es: de verdad necesitas REdux si ya usar Rx? Probablemente no. No es dificil [reimplementar Redux en Rx](https://github.com/jas-chen/rx-redux). Algunos dicen, que son solo 2 líneas usando el método `.scan()` de Rx. ¡Y probablemente lo sea!
+La pregunta es: de verdad necesitas Redux si ya usar Rx? Probablemente no. No es dificil [reimplementar Redux en Rx](https://github.com/jas-chen/rx-redux). Algunos dicen, que son solo 2 líneas usando el método `.scan()` de Rx. ¡Y probablemente lo sea!
 
-Si tienes dudas, revisa el código fuente de Redux (no hay mcuho ahí), así como su ecosistema (por ejemplo, [las herramientas de desarrolladores](https://github.com/gaearon/redux-devtools)). Si no te interesa tanto eso y quieres que los datos reactivos simplemente fluyan, probablemente quieras usar algo como [Cycle](http://cycle.js.org) en su lugar, o incluso combinarlos con Redux. ¡Déjanos saber como resulta eso!
+Si tienes dudas, revisa el código fuente de Redux (no hay mucho ahí), así como su ecosistema (por ejemplo, [las herramientas de desarrolladores](https://github.com/gaearon/redux-devtools)). Si no te interesa tanto eso y quieres que los datos reactivos simplemente fluyan, probablemente quieras usar algo como [Cycle](http://cycle.js.org) en su lugar, o incluso combinarlos con Redux. ¡Déjanos saber como resulta eso!
